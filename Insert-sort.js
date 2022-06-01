@@ -5,11 +5,9 @@ function ordenar(arr) {
   let array = arr
   for (let j = 0; j < array.length; j++) {
     for (let i = 0; i < arr.length; i++) {
-      if (array[i] < array[i + 1]) {
-        array[i] = array[i]
-      } else {
+      if (array[i + 1] < array[i]) {
         intermediario = array[i];
-        array[i + 1] = array[i];
+        array[i] = array[i + 1];
         array[i + 1] = intermediario;
       }
     }
