@@ -1,5 +1,6 @@
-const valores = [5, 6, 3, 2, 1, 4];
-
+const valores = [5, 6, 3, 2, 1, 4, 8, 9, 7];
+let teste = [];
+let antes = Date.now();
 function ordenar(arr) {
   let intermediario = null;
   let array = arr
@@ -17,6 +18,7 @@ function ordenar(arr) {
 
 ordenar(valores)
 
-
+let duracao = Date.now() - antes;
+console.log(duracao)
 
 //     compara o index se é maior que o index + 1 se ele for o index + 1 vai para o lugar dele e agora a gente testa o index se ele é maior que o index - 1 se sim ele se mantem.
